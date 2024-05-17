@@ -1,0 +1,17 @@
+.host{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap : 15px;
+    .host__name{
+        width : 50%;
+        font-size : 18px;
+        display: flex;
+        justify-content: right;
+    }
+    .host__picture{
+        border-radius: 80px;
+        height : 64px;
+        width: auto;
+    }
+}

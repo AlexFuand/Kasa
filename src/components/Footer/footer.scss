@@ -1,0 +1,36 @@
+footer{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    margin-top: 50px;
+    height: 180px;
+    gap : 35px;
+    
+    .footer__logo{
+        width: 140px;
+        margin-top: 20px;
+    }
+    .footer__rights{
+        color: white;
+    }
+    img{
+        transition : all 1s ease-in-out;
+    }
+    img:hover{
+        transform : rotate(720deg);
+        scale : 1.8;
+    }
+}
+
+@media screen and (max-width : 1240px){
+    footer{
+        gap : 10px;
+        .footer__rights{
+            width : 135px;
+            font-size : 12px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.error{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+    font-family:"Montserrat";
+    color: #FF6060;
+    .error__link{
+      text-decoration: none;
+      color:black;
+      font-size : 18px;
+      transition : all 0.3s ease-in;
+    }
+    .error__link:hover{
+      text-decoration: underline;
+      scale : 1.5;
+    }
+    .error__text{
+      font-size : 36px;
+    }
+    .error__msg{
+        display: flex;
+        gap : 120px;
+        .error__title, .error__smiley{
+            font-size: 288px;
+            font-weight : 700;
+        }
+        .error__smiley{
+            animation-name: rotate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes rotate {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+    }
+}
+
+@media screen and (max-width : 1240px){
+  .error{
+    margin : 0px 20px;
+    width : 335px;
+    .error__msg{
+      width : 100%;
+      gap : 40px;
+      .error__title, .error__smiley{
+        margin-top : 50px;
+        font-size : 96px;
+      }
+    }
+    .error__text{
+      font-size : 18px;
+      margin : 20px;
+      text-align: center;
+    }
+    .error__link{
+      font-size: 14px;
+      text-decoration: underline;
+    }
+  }
+}
