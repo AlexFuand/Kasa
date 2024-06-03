@@ -9,24 +9,24 @@
     gap: 50px;
     .card{
         position: relative;
+        overflow : hidden;
+        border-radius: 10px;
         .card__img{
             width: 100%;
             object-fit: cover;
             border-radius: 10px;
             aspect-ratio: 1/1;
             transition : all 0.35s;
-            overflow: hidden;
         }
         .card__img:hover{
-            filter : drop-shadow( 5px 5px 4px #00000070);
+            filter : drop-shadow( 5px 5px 4px #00000080);
             scale : 1.1;
-            overflow : hidden;
         }
         .card__title{
             color:white;
             position: absolute;
             width : calc(100% - 45px);
-            bottom : 4px;
+            bottom : 0px;
             padding : 20px 20px 20px 25px;
             font-size : 18px;
             transition : 0.35s ease-in;
