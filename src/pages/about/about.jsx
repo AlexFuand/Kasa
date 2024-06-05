@@ -12,7 +12,8 @@ function About({data}) {
             {data.map((elem) =>(
                 <Collapse  
                     title = {elem.title}
-                    text = {elem.description} />
+                    text = {elem.description} 
+                    key = {elem.id}/>
                 )
             )}
             </div>

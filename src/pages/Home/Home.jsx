@@ -8,7 +8,9 @@ function Home() {
   return (
     <main>
       <div className="home">
-        <Banner className={styles.banner} img={homeBanner} text="Chez vous partout et ailleurs"/>
+        <div className="home__banner">
+           <Banner className={styles.banner} img={homeBanner} text="Chez vous partout et ailleurs"/>
+        </div>
         <CardsHome />
       </div>
     </main>

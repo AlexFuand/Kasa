@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.svg'
 import './header.scss';
 
@@ -10,12 +10,12 @@ function Header () {
                 <img className="navigation__logo" src = {logo} alt = "Logo" />
             </Link>
             <div className="navigation__div">
-                <Link className="navigation__link" to="/accueil">
+                <NavLink to="/accueil" className={({isActive}) => isActive ? "navigation__link active" : "navigation__link"} >
                     Accueil
-                </Link>
-                <Link className="navigation__link" to="/about">
+                </NavLink>
+                <NavLink to="/about" className={({isActive}) => isActive ? "navigation__link active" : "navigation__link"}>
                     A propos
-                </Link>
+                </NavLink>
             </div>
         </nav>
     </header>

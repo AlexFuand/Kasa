@@ -9,7 +9,7 @@ function CardsHome (){
                 return (
                     <figure className="card">
                         <Link to={"/product/" + product.id}>
-                            <img className = "card__img" src={product.cover} alt=""/>
+                            <img key={product.id} className = "card__img" src={product.cover} alt=""/>
                             <figcaption className ="card__title">{product.title}</figcaption>
                         </Link>
                     </figure>

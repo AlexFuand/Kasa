@@ -21,7 +21,9 @@ header {
         .navigation__link:hover{
             transition: all 0.2s ease-in;
             text-decoration: underline;
-            font-size : 24px;
+        }
+        .navigation__link.active{
+            text-decoration: underline
         }
         img{
             transition : all 1s ease-in-out;
